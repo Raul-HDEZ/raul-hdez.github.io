@@ -480,6 +480,7 @@ main {
 }
 
 .navbar-link {
+  --fs-8: 14px;
   color: var(--light-gray);
   font-size: var(--fs-8);
   padding: 20px 7px;
@@ -951,8 +952,8 @@ main {
 
 .skill-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
   margin-bottom: 10px;
 }
 
@@ -988,13 +989,11 @@ main {
   margin-bottom: 15px;
 }
 
-.skill-img {
-  position: relative;
+.skill-img img {
   width: 100%;
-  height: 200px;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
 }
 
 .project-img::before {
@@ -1027,7 +1026,6 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
-
   background: var(--jet);
   color: var(--navy-blue-shade);
   position: absolute;
@@ -1112,6 +1110,7 @@ main {
   text-transform: capitalize;
   line-height: 1.3;
   text-align: center;
+  display: none;
 }
 
 .project-category {
@@ -1349,6 +1348,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+  .skill-title {
+    color: var(--white-2);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    text-transform: capitalize;
+    line-height: 1.3;
+    text-align: center;
+    display: block;
+  }
 
 }
 
@@ -1617,7 +1626,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-content { padding: 25px; }
 
 
-
   /**
    * #CONTACT
    */
@@ -1729,7 +1737,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-  .skill-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .skill-list, .blog-posts-list { grid-template-columns: repeat(4, 1fr); }
 
   /**
    * CONTACT
@@ -1741,7 +1749,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 /**
@@ -1858,6 +1866,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .blog-banner-box { height: 230px; }
+
 }
 
 
@@ -1976,9 +1985,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
-
-
-
 
 }
 

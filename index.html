@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raúl Hernández</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Avatar.png" alt="Raúl Hernández" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Raúl Hernández">Raúl Hernández</h1>
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:raul.hdez.schez.2001@gmail.com" class="contact-link">raul.hdez.schez.2001@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">May, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Madrid, Spain</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hernandez-raul/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/raul-hdez" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title" >About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I've been working as a software developer for 2 years, focusing on creating apps that are efficient and easy to use. 
+            I enjoy working in teams and have a strong track record of delivering high-quality solutions on time. 
+            I'm skilled in Java, Python, and NodeJS, and I'm also interested in solving challenging problems and staying updated with the latest in technology.
+          </p>
+
+          <p>
+            My experience also includes cloud development using AWS, Virtual Network Function orchestration, and setting up CI/CD pipelines with Jenkins.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Capabilities</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cloud-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Development</h4>
+
+                <p class="service-item-text">
+                  Experience working with AWS and firebase clouds.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Development of sites at the professional level using Angular.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-network.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Network Functions Orchestration</h4>
+
+                <p class="service-item-text">
+                  Orchestration of CNFs and VNFs using HPE software.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-server.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SysAdmin - CI/CD</h4>
+
+                <p class="service-item-text">
+                  Experience working with Red Hat OpenShift, Kubernetes, Jenkins, Github Actions and Gitlab pipelines.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Employers</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.svg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Application Development</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                Madrid - IES Tetúan
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technician in Microcomputer Systems and Networks</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Madrid - IES Tetúan
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Business Application Engineer II</h4>
+
+              <span>Jun 2022 — Present</span>
+
+              <p class="timeline-text">
+                Hewlett Packard Customer Delivery Services, S.L. CDS
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cloud Developer</h4>
+
+              <span>Jan 2022 — Jun 2022</span>
+
+              <p class="timeline-text">
+                Gravitycode, S.L.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Server Installation and Maintenance</h4>
+
+              <span>Apr 2020 — Jun 2020</span>
+
+              <p class="timeline-text">
+                Medios avanzados de calculo y diseño
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="receipt-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS Certified Developer</h4>
+
+              <span>Mar 2022</span>
+
+              <p class="timeline-text">
+                Amazon Web Services
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Terraform for AWS - Beginner to Expert</h4>
+
+              <span>May 2024</span>
+
+              <p class="timeline-text">
+                Udemy
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS Amazon S3 Mastery Bootcamp</h4>
+
+              <span>Mar 2024</span>
+
+              <p class="timeline-text">
+                Udemy
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skill-list">
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-1.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="skill-title">Python</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-2.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="skill-title">Java</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="skill-title">NodeJs</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-4.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="skill-title">Bash</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-5.jpg" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="skill-title">PHP</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-6.jpg" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="skill-title">Angular</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-7.jpg" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="skill-title">TypeScript</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="skill-img">
+                  <img src="./assets/images/skill-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+                <h3 class="skill-title">HTML CSS JavaScript</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+
+                  <img src="./assets/images/skill-9.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="skill-title">SQL</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+
+                  <img src="./assets/images/skill-10.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="skill-title">GIT</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+
+                  <img src="./assets/images/skill-11.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="skill-title">AWS</h3>
+              </a>
+            </li>
+
+            <li class="skill-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="skill-img">
+
+                  <img src="./assets/images/skill-12.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="skill-title">Kubernetes</h3>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-description="lorem ipsum dolor sit amet, consectetur adipis">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Takion</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Orizon</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Fundo</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Brawlhalla</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="project-title">DSM.</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">MetaSpark</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">Summary</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+                <h3 class="project-title">Task Manager</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Arrival</h3>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+    - custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+
+      <!--
+    - ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+<!-- Modal structure -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <img id="modal-image" src="" alt="" class="modal-image">
+    <p id="modal-category"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
